@@ -15,8 +15,8 @@ def cadastrar_produto():
     try:
         quantidade = int(input("Quantidade em estoque: "))
 
-        if quantidade < 0:
-            print("Erro: a quantidade não pode ser negativa.")
+        if quantidade <= 0:
+            print("Erro: a quantidade deve ser maior que zero.")
             return
 
     except ValueError:
