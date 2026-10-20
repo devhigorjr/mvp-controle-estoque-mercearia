@@ -60,23 +60,26 @@ def consultar_estoque():
         print(f"{nome}: {quantidade} unidade(s)")
 
         
+
 while True:
     print("\n=== CONTROLE DE ESTOQUE ===")
     print("1 - Cadastrar produto")
     print("2 - Consultar estoque")
-    print("3 - atualiar  estoque")
+    print("3 - Atualizar estoque")
     print("0 - Sair")
-    
+
     opcao = input("Escolha uma opção: ")
 
-            if opcao == "1":
-            cadastrar_produto()
-        elif opcao == "2":
-            consultar_estoque()
-        elif opcao == "3":
-            atualizar_estoque()
-        elif opcao == "0":
-            print("Programa encerrado.")
-            break
-        else:
+    if opcao == "1":
+        cadastrar_produto()
+    elif opcao == "2":
+        consultar_estoque()
+    elif opcao == "3":
+        atualizar_estoque()
+    elif opcao == "0":
+        print("Programa encerrado.")
+        break
+    else:
+        print("Opção inválida. Tente novamente.")
+
             print("Opção inválida. Tente novamente.")
