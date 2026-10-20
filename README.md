@@ -37,3 +37,13 @@ Em desenvolvimento — etapa inicial de planejamento do MVP.
 - Dicionários para armazenar os produtos e suas quantidades.
 - Funções para organizar as operações do sistema.
 - Estruturas condicionais e de repetição para controlar o menu.
+## Revisão técnica do MVP
+
+Durante a auto-revisão do projeto, foram verificados os seguintes pontos:
+
+- **Legibilidade:** organização do código e identação dos blocos condicionais e de repetição.
+- **Validação:** verificação do nome do produto e da quantidade informada, evitando cadastros inválidos.
+- **Tratamento de erros:** uso de mensagens para orientar o usuário quando uma entrada não é válida.
+- **Funcionalidades:** conferência das opções de cadastro, consulta e atualização do estoque.
+
+A revisão busca melhorar a organização, a clareza e a confiabilidade do sistema de controle de estoque.
