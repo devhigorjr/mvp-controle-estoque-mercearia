@@ -25,7 +25,30 @@ def cadastrar_produto():
 
     produtos[nome] = quantidade
     print("Produto cadastrado com sucesso!")
+def atualizar_estoque():
+    if not produtos:
+        print("Nenhum produto cadastrado.")
+        return
 
+    nome = input("Nome do produto: ").strip().capitalize()
+
+    if nome not in produtos:
+        print("Produto não encontrado.")
+        return
+
+    try:
+        quantidade = int(input("Nova quantidade em estoque: "))
+
+        if quantidade < 0:
+            print("Erro: a quantidade não pode ser negativa.")
+            return
+
+    except ValueError:
+        print("Erro: digite uma quantidade inteira válida.")
+        return
+
+    produtos[nome] = quantidade
+    print("Estoque atualizado com sucesso!")
 def consultar_estoque():
     if not produtos:
         print("Nenhum produto cadastrado.")
