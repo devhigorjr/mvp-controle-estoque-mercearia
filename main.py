@@ -36,6 +36,7 @@ def consultar_estoque():
     for nome, quantidade in produtos.items():
         print(f"{nome}: {quantidade} unidade(s)")
 
+        
 while True:
     print("\n=== CONTROLE DE ESTOQUE ===")
     print("1 - Cadastrar produto")
