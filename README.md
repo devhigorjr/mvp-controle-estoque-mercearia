@@ -22,3 +22,18 @@ As tecnologias serão definidas durante o desenvolvimento.
 Status
 
 Em desenvolvimento — etapa inicial de planejamento do MVP.
+## Como executar o projeto
+
+1. Abra o arquivo `main.py` em um ambiente que execute Python 3.
+2. Execute o programa.
+3. Escolha a opção `1` para cadastrar um produto.
+4. Informe o nome do produto e a quantidade em estoque.
+5. Escolha a opção `2` para consultar os produtos cadastrados.
+6. Escolha a opção `0` para encerrar o programa.
+
+## Tecnologias utilizadas
+
+- Python 3
+- Dicionários para armazenar os produtos e suas quantidades.
+- Funções para organizar as operações do sistema.
+- Estruturas condicionais e de repetição para controlar o menu.
