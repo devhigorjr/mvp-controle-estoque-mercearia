@@ -2,7 +2,7 @@
 produtos = {}
 
 def cadastrar_produto():
-    nome = input("Nome do produto: ").strip()
+    nome = input("Nome do produto: ").strip.lower()
 
     if nome == "":
         print("Erro: o nome do produto é obrigatório.")
@@ -30,7 +30,7 @@ def atualizar_estoque():
         print("Nenhum produto cadastrado.")
         return
 
-    nome = input("Nome do produto: ").strip().capitalize()
+    nome = input("Nome do produto: ").strip().lower()
 
     if nome not in produtos:
         print("Produto não encontrado.")
