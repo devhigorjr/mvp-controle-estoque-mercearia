@@ -1,5 +1,9 @@
 
 produtos = {}
+def mostrar_titulo():
+    print("\n" + "=" * 40)
+    print("CONTROLE DE ESTOQUE")
+    print("=" * 40)
 
 def cadastrar_produto():
     nome = input("Nome do produto: ").strip.lower()
@@ -62,7 +66,7 @@ def consultar_estoque():
         
 
 while True:
-    print("\n=== CONTROLE DE ESTOQUE ===")
+    mostrar_titulo()
     print("1 - Cadastrar produto")
     print("2 - Consultar estoque")
     print("3 - Atualizar estoque")
